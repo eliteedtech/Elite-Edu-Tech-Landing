@@ -9,6 +9,7 @@ import TestimonialCard from "../components/ui/testimonial-card"
 import StatCard from "../components/ui/stats-card"
 import Card from "../components/ui/card"
 import Badge from "../components/ui/badge"
+import Hero from "../pages/Hero"
 
 // Intersection Observer for scroll animations
 const useIntersectionObserver = (options = {}) => {
@@ -47,58 +48,8 @@ const Home = () => {
   return (
     <main className="min-h-screen flex flex-col bg-white dark:bg-gray-950 transition-colors duration-300">
       {/* Hero Section */}
-      <section className="pt-32 pb-16 md:pt-40 md:pb-24 px-4">
-        <div className="container mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6 animate-slide-up">
-              <Badge variant="primary">Revolutionizing Education</Badge>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900 dark:text-white">
-                Empowering Education Through Technology
-              </h1>
-              <p className="text-lg text-gray-600 dark:text-gray-400 max-w-lg">
-                Our innovative platform combines AI-powered learning tools with interactive content to create engaging
-                educational experiences.
-              </p>
-              <div className="flex flex-wrap gap-4 pt-2">
-                <Button variant="primary" size="lg">
-                  Get Started
-                </Button>
-                <Button variant="outline" size="lg">
-                  Learn More
-                </Button>
-              </div>
-              <div className="flex items-center gap-4 pt-4">
-                <div className="flex -space-x-2">
-                  {[1, 2, 3, 4].map((i) => (
-                    <div
-                      key={i}
-                      className="w-10 h-10 rounded-full border-2 border-white dark:border-gray-800 overflow-hidden"
-                    >
-                      <img
-                        src={`/placeholder.svg?height=40&width=40`}
-                        alt={`User ${i}`}
-                        width={40}
-                        height={40}
-                        className="bg-gray-200 dark:bg-gray-700"
-                      />
-                    </div>
-                  ))}
-                </div>
-                <p className="text-sm text-gray-600 dark:text-gray-400">
-                  <span className="font-semibold text-indigo-600 dark:text-indigo-400">5,000+</span> educators trust our
-                  platform
-                </p>
-              </div>
-            </div>
-            <div className="relative animate-slide-up">
-              <div className="absolute -top-6 -left-6 w-24 h-24 bg-indigo-100 dark:bg-indigo-900/30 rounded-full opacity-70 animate-pulse"></div>
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-indigo-100 dark:bg-indigo-900/30 rounded-full opacity-70 animate-pulse"></div>
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-all duration-500">
-                <img src="/placeholder.svg?height=600&width=600" alt="Education Platform" className="w-full h-auto" />
-              </div>
-            </div>
-          </div>
-        </div>
+      <section >
+        <Hero/>
       </section>
 
       {/* Features Section */}
