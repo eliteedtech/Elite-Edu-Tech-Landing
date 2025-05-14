@@ -83,7 +83,7 @@ const Footer = () => {
               href="#"
               className="hover:text-indigo-400 transition-all duration-300 transform hover:scale-110"
               aria-label="Instagram"
-            >
+                >
               <Instagram className="h-5 w-5" />
             </a>
             <a

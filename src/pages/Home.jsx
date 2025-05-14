@@ -46,7 +46,7 @@ const Home = () => {
 
   return (
     <main className="min-h-screen flex flex-col bg-white dark:bg-gray-950 transition-colors duration-300">
-      {/* Hero Section */}
+      Hero Section
       <section className="pt-32 pb-16 md:pt-40 md:pb-24 px-4">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
