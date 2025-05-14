@@ -3,6 +3,7 @@ import { RouterProvider } from "react-router-dom"
 import Home from "../pages/Home"
 import ErrorPage from "../pages/ErrorPage"
 import Layout from "../components/layout/Layout"
+import Features from "../pages/Features"
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/features",
+        element: <Features />,
       },
       // Add more routes here
     ],
