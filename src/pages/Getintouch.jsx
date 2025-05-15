@@ -1,106 +1,100 @@
 
-import { MapPin,Phone,Mail,Clock } from "lucide-react";
-function Getintouch(){
-    return(
-        <div className="bg-indigo-600 py-20">
-            <h1 className="font-bold text-white mx-au text-3xl text-center">Get in Touch</h1>
-            <p className="font-sm tet-white text-center text-white ">Have questions or ready to transform your school? Reach out to our team.</p>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-10">
-                <div className="">
-              
-                    <div className="space-y-4 px-8 grid lg:grid-cols-1 md:grid-cols-2 ">
-                    <p className="text-2xl font-bold text-white mb-6 ">Contact Information </p>
-                    
-                        <div className="flex">
-                            <div className="h-6 w-6 text-indigo-400 m-2"> <MapPin /></div>
-                            <div><p className="font-medium text-lg text-white">Address</p>
-                                  <p className="text-white text-md">Plot 25, Tech Hub Avenue
-                                    <br></br>
-                                  Kano State, Nigeria</p>  
-                            </div>
-                        </div>
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
-                        <div className="flex">
-                            <div className="h-6 w-6 text-indigo-400 m-2"> <Phone /></div>
-                            <div><p className="font-sm text-white">
-                                +234 8012345678
-                                     <br></br>
-                                 +234 9087654321</p> 
-                            </div>
-                        </div>
+function Getintouch() {
+  return (
+    <div className="bg-indigo-600 py-4 px-4">
+      <h1 className="text-white text-xl font-semibold text-center mb-1">
+        Get in Touch
+      </h1>
+      <p className="text-white text-sm text-center mb-6">
+        Have questions or ready to transform your school? Reach out to us.
+      </p>
 
-                        <div className="flex">
-                            <div className="h-6 w-6 text-indigo-400 m-2"> <Mail /></div>
-                            <div><p className="font-medium text-lg text-white">Email</p>
-                                  <p className="text-white">info@eliteedtech.com
-                                    <br></br>
-                                    support@eliteedtech.com</p>  
-                            </div>
-                        </div>
-
-                        <div className="flex">
-                            <div className="h-6 w-6 text-indigo-400 m-2"> <Clock /></div>
-                            <div><p className="font-medium text-lg text-white">Business Hours</p>
-                                  <p className="text-white">Monday - Friday: 8am - 5pm
-                                    <br></br>
-                                    Saturday: 9am - 1pm</p>  
-                            </div>
-                        </div>
-
-                        
-
-                    
-                    </div>
-                    {/* <div className="mt-8"><p className="font-medium text-lg text-white mx-4 mb-4">Follow Us</p>
-                            <p className="flex text-white">  </p>
-                            <div className="flex space-x-4 text-white">
-                                <a href="#" className="m-2"><Facebook /></a>
-                                <a href="#" className="m-2"> <Instagram /></a>
-                                <a href="#" className="m-2"><Twitter /></a>
-                                <a href="#" className="m-2"><Linkedin /></a>
-                            </div>
-                    </div> */}
-                </div>
-                <div className="mx-auto">
-                    <p className="text-2xl font-bold text-white mb-6">Send Us a Message </p>
-                    <form className="space-y-4 pr-8">
-                        <div className="md:grid-cols-2 grid grid-cols-1 gap-4">
-                        <div>
-                            <label className="text-white text-sm" htmlFor="fullname">Full Name</label><br></br>
-                            <input className=" border border-white focus:outline-none px-4 py-2 w-full placeholder-white rounded-lg" type="text" id="fullname" name="fullname" placeholder="your name"></input>
-                        </div>
-                        <div>
-                            <label className="text-white text-sm" htmlFor= "email">Email</label><br></br>
-                            <input className=" border border-white focus:outline-none px-4 py-2 w-full placeholder-white rounded-lg" type="text" id="email" name="email" placeholder="your name"></input>
-                        </div>
-
-                        </div>
-                        <div>
-                            <label className="text-white text-sm" name="phone" htmlFor="phone">Phone Number</label><br></br>
-                            <input type="number" id="phone" className="border border-white focus-outline-none placeholder-white w-full px-4 py-2 rounded-lg"placeholder="Your phone number" ></input>
-                        </div>
-                        <div>
-                            <label className="text-white text-sm" name="schoolname" htmlFor= "schoolname">School Name</label><br></br>
-                            <input type="text"id="schoolname" className="border border-white placeholder-white w-full px-4 py-2 rounded-lg"placeholder="Your School Name" ></input>
-                        </div>
-                        <div>
-                            <label className="text-white text-sm" name="message" htmlFor= "message" >Message</label><br></br>
-                            <textarea type="textarea" id="message" rows="4" className="border border-white placeholder-white w-full px-4 py-2 rounded-lg"placeholder="How can we help you" />
-                        </div>
-                        <div className="items-center flex">
-                            <input type="checkbox" name= "check" className="h-4 w-4 rounded" id="check"></input>
-                            <label className="text-white text-sm ml-2 " htmlFor="check">I agree </label>
-                        </div>
-                        <div>
-                            <button type="submit" className="text-white rounded-xl px-4 py-2 border border-white w-full ">
-                                Send Message
-                            </button>
-                        </div>
-                    </form>
-                </div>
-               
-            </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-2 gap-y-3 px-15 justify-center">
+       
+        <div className="">
+          <p className="text-white  font-semibold text-2xlg mb-2  ">Contact Information</p>
+          <div className="space-y-2 text-sm lg:grid-cols-1 sm:grid-cols-2 grid grid-cols-1">
+            <ContactItem icon={<MapPin />} title="Address">
+              Plot 25, Tech Hub Avenue<br />
+              Kano State, Nigeria
+            </ContactItem>
+            <ContactItem icon={<Phone />} title="Phone">
+              +234 8012345678<br />
+              +234 9087654321
+            </ContactItem>
+            <ContactItem icon={<Mail />} title="Email">
+              info@eliteedtech.com<br />
+              support@eliteedtech.com
+            </ContactItem>
+            <ContactItem icon={<Clock />} title="Hours">
+              Mon-Fri: 8am-5pm<br />
+              Sat: 9am-1pm
+            </ContactItem>
+          </div>
         </div>
-    );
+
+       
+        <div>
+          <p className="text-white  font-semibold  text-2xlg mb-2">Send Us a Message</p>
+          <form className="space-y-2 text-sm">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+              <Input label="Full Name" type="text" name="fullname" placeholder="Your name" />
+              <Input label="Email" type="email" name="email" placeholder="Your email" />
+            </div>
+            <Input label="Phone" type="number" name="phone" placeholder="Phone number" />
+            <Input label="School Name" type="text" name="schoolname" placeholder="Your school Name" />
+            <Textarea label="Message" name="message" placeholder="How can we help you?" />
+            <div className="flex items-center space-x-2">
+              <input type="checkbox" id="check" className="h-3 w-3" />
+              <label htmlFor="check" className="text-white text-xs">I agree</label>
+            </div>
+            <button type="submit" className="w-full py-1.5 text-sm border border-white text-white rounded">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  );
 }
+
+function ContactItem({ icon, title, children }) {
+  return (
+    <div className="flex items-start gap-2 text-white">
+      <div className="text-indigo-300 mt-0.5">{icon}</div>
+      <div>
+        { <p className="font-medium text-xs mb-0.5">{title}</p>}
+        <p className="text-xs">{children}</p>
+      </div>
+    </div>
+  );
+}
+
+function Input({ label, ...props }) {
+  return (
+    <div>
+      <label className="text-white text-xs block mb-0.5">{label}</label>
+      <input
+        {...props}
+        className="w-full px-2 py-1 border border-white bg-transparent text-white placeholder-white rounded focus:outline-none text-xs"
+      />
+    </div>
+  );
+}
+
+function Textarea({ label, ...props }) {
+  return (
+    <div>
+      <label className="text-white text-xs block mb-0.5">{label}</label>
+      <textarea
+        {...props}
+        rows={3}
+        className="w-full px-2 py-1 border border-white bg-transparent text-white placeholder-white rounded focus:outline-none text-xs"
+      />
+    </div>
+  );
+}
+
 export default Getintouch;
