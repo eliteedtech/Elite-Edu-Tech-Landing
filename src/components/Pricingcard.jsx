@@ -1,16 +1,22 @@
 
-import React from 'react';
+import React,{useEffect} from 'react';
 import { Check,X } from 'lucide-react';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 const Pricingcard = ({ title, price, description, features, isPopular, isEnterprice, btnlinks }) => {
+  useEffect(()=> {
+    AOS.init({
+      duration: 1000,
+    })
+  }, [])
   const specialFeatures = [
     "Biometric attendance",
     "Financial management",
     "Student portal",
   ];
   return (
-    <div
+    <div data-aos="zoom-in-out"
       className={`relative flex flex-col justify-between rounded-2xl shadow-md h-full bg-white 
         hover:shadow-xl transition-transform duration-300 overflow-hidden    ${
           isPopular ? 'scale-105' : 'hover:shadow-[0_4px_10px_rgba(59,130,246,0.5)]'
@@ -31,12 +37,12 @@ const Pricingcard = ({ title, price, description, features, isPopular, isEnterpr
         
       
         <ul className="space-y-3 mb-6">
-  {features.map((feature, index) => {
-    const isSpecialInStarter =
-      title === "Starter" &&
-      (feature === "Financial management" || feature === "Student portal");
+        {features.map((feature, index) => {
+        const isSpecialInStarter =
+        title === "Starter" &&
+        (feature === "Financial management" || feature === "Student portal");
 
-    const isSpecialFeature =
+      const isSpecialFeature =
       feature === "Biometric attendance" || isSpecialInStarter;
 
     return (
