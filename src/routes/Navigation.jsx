@@ -4,6 +4,7 @@ import Home from "../pages/Home"
 import ErrorPage from "../pages/ErrorPage"
 import Layout from "../components/layout/Layout"
 import Features from "../pages/Features"
+import About2 from "../pages/About2"
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: "/features",
         element: <Features />,
+      },
+      {
+        path: "/about",
+        element: <About2 />,
       },
       // Add more routes here
     ],

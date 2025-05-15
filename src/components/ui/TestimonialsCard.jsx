@@ -5,16 +5,21 @@ import "aos/dist/aos.css"
 import StarsRating from "./StarsRating";
 import { useEffect } from "react";
 
-export default function TestimonialsCard({ image, rating, isActive, testimony, testifier, testifierInfo }) {
+export default function TestimonialsCard({ image, rating, testimony, testifier, testifierInfo }) {
     useEffect(() => {
-        AOS.init({})
+      
+        AOS.init({
+           duration: 3000, 
+      once: true,  
+        })
     }, [])
  
    
     return (
       <div
         className="my-10 mb-0 w-full md:max-w-[216px]  lg:max-w-[384px]  md:max-h-[512px] md:mr-5  "
-        data-aos="fade-left "
+        data-aos="fade-up "
+        
       >
         <div className="flex shadow-xl py-5 px-6   flex-col rounded-xl bg-white w-full justify-center items-center ">
           <div className="flex w-full justify-left items-center">

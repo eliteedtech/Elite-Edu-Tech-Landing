@@ -1,6 +1,6 @@
 import { useState } from "react";
 // import Carousel from "../components/Carousel";
-import TestimonialsCard from "../components/TestimonialsCard";
+import TestimonialsCard from "../components/ui/TestimonialsCard";
 // import { Circle } from "lucide-react";
 let testimonials = [
   {
