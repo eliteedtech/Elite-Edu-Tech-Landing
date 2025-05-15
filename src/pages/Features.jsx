@@ -56,10 +56,10 @@ export default function Features() {
           <div className="flex justify-center gap-6">
             <div className="pt-1">
               <Button type="btn-custom" 
-                customBtnStyle="w-full hover:scale-105 text-white bg-red-600 px-5 hover font-semibold p-[10px] min-w-24 font-sans cursor-pointer rounded-lg transition duration-200 shadow-2xl cursor-pointer hover:shadow-xl " 
+                customBtnStyle="w-full hover:scale-105 text-white bg-red-600 px-5 font-semibold p-[10px] min-w-24 font-sans cursor-pointer rounded-lg transition duration-200 shadow-2xl cursor-pointer hover:shadow-xl " 
                 text="Get Started" /></div>
             <div className=""><Button type="btn-custom" 
-                customBtnStyle="w-full text-indigo-600 border-2 border-white px-5 p-[14px] min-w-24 font-sans text-white font-bold rounded-lg transition duration-200 cursor-pointer shadow-2xl cursor-pointer hover:scale-105 hover:shadow-xl" 
+                customBtnStyle="w-full hover:scale-105 text-indigo-600 border-2 border-white px-5 p-[14px] min-w-24 font-sans text-white font-bold rounded-lg transition duration-200 cursor-pointer shadow-2xl cursor-pointer  hover:shadow-xl" 
                 text="Request a Demo" /></div>
           </div>
           <div className="flex justify-center gap-5 text-3xl pt-5">

@@ -25,7 +25,7 @@ function Getintouch() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-2 gap-y-3 px-15 justify-center">
        
         <div className="">
-          <p className="text-white  text-white  font-bold  text-2xlg mb-6  ">Contact Information</p>
+          <p className="text-white font-bold  text-2xlg mb-6">Contact Information</p>
           <div className="space-y-4 text-sm lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-2 grid grid-cols-1">
             <ContactItem icon={<MapPin />} title="Address">
               Plot 25, Tech Hub Avenue<br />
