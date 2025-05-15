@@ -14,11 +14,11 @@ export default function About2() {
           <h1 className="tracking-wide text-indigo-900 font-bold text-3xl md:text-4xl text-center mt-8">About Elite EdTech</h1>
           <p className=" text-gray-600 text-md my-3 max-w-2xl mx-auto text-center">Revolutionizing education technology across Nigeria with solutions built for African schools</p>
         </div>
-        <div className="md:flex-row items-center flex flex-col gap-12">
-            <div className="w-1/2 max-w-xl h-[300px] text-2xl flex justify-center items-center ">
+        <div className="md:flex-col lg:flex-row items-center flex flex-col gap-12 pt-7 md:pt-0">
+            <div className="max-w-xl h-[300px] text-2xl flex justify-center items-center ">
               <img alt="Our Team" src="https://placehold.co/600x400/blue/white?text=Our+Team" class="hover:shadow-indigo-200/50 transition rounded-xl shadow-2xl" />   
             </div>
-          <div className="w-1/2">
+          <div className="py-8 md:py-0">
             <div className="">
               {misVis.map((mis, id) => (
                 <div key={id} className="">
