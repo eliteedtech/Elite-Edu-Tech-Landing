@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect} from 'react'
+import Aos from 'aos'
+import 'aos/dist/aos.css';
 //import Button from './components/ui/Button2.jsx';
 import { Check } from 'lucide-react';
 import Button from '../components/ui/Button2';
@@ -26,6 +28,13 @@ export default function Features() {
                       listProducts: ["Achievement badges and level progression", "Leaderboards for healthy competition", "Customizable reward systems per school"],
                       cardName: "Gamified Rewards",  }
                   ]
+
+    useEffect( () =>{
+        Aos.init({
+          duration: 1500,
+        })
+      }, )
+                    
   return (
     <section className='features-wrapper min-h-screen pb-16'>
       <div className=' container px-8 m-auto pt-8'>
@@ -37,12 +46,12 @@ export default function Features() {
           
           return(
           <div className='grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 md:mt-15 md:mb-25'>
-            <div className={`border-indigo-200  ${isEven ? "md:order-2" : "md:order-1"} mb-10 md:mb-0`}>
+            <div className={`border-indigo-200  ${isEven ? "md:order-2" : "md:order-1"} mb-10 md:mb-0`} data-aos={isEven ? "zoom-in-left" : "zoom-in-right"}>
               <div className="w-full max-w-xl h-[300px] text-2xl flex justify-center items-center md:mb-24">
                 <img alt={product.cardName} src={`https://placehold.co/600x400/blue/white?text=${product.cardName}`} class="hover:shadow-indigo-200/50 transition rounded-xl shadow-2xl" />   
               </div>
             </div>
-            <div className={`${isEven ? "md:order-1" : "md:order-2"} mb-10 md:mb-0`}>
+            <div className={`${isEven ? "md:order-1" : "md:order-2"} mb-10 md:mb-0`} data-aos={isEven ? "zoom-in-right" : "zoom-in-left"}>
               <h1 className='font-bold text-indigo-600 text-2xl mt-2'>{product.title}</h1>
               <p className="text-gray-600 my-4">{product.text}</p>
               {product.listProducts.map((listProduct, i) => (
