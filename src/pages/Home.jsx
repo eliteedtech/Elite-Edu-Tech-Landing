@@ -10,6 +10,8 @@ import StatCard from "../components/ui/stats-card"
 import Card from "../components/ui/card"
 import Badge from "../components/ui/badge"
 import Hero from "../pages/Hero"
+import Getintouch from "../pages/Getintouch"
+import Institutions from "../pages/Institutions"
 
 // Intersection Observer for scroll animations
 const useIntersectionObserver = (options = {}) => {
@@ -50,6 +52,7 @@ const Home = () => {
       {/* Hero Section */}
       <section >
         <Hero/>
+        
       </section>
 
       {/* Features Section */}
@@ -92,6 +95,7 @@ const Home = () => {
         </div>
       </section>
 
+
       {/* Testimonial Section */}
       <section ref={testimonialRef} className="py-16 md:py-24 px-4 opacity-0 transition-opacity duration-1000">
         <div className="container mx-auto">
@@ -123,6 +127,10 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </section>
+      {/* institutions */}
+      <section>
+      <Institutions />
       </section>
 
       {/* CTA Section */}
@@ -156,6 +164,10 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </section>
+      {/* getintouch section */}
+      <section>
+      <Getintouch/>
       </section>
 
       {/* Stats Section */}
@@ -237,6 +249,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      
+
     </main>
   )
 }
