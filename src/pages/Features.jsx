@@ -49,7 +49,7 @@ export default function Features() {
                     
   return (
     <section className='features-wrapper min-h-screen pb-16'>
-      <div className="features-hero bg-gradient-to-b relative overflow-hidden from-blue-900 via-blue-800 to-white min-h-screen">
+      {/* <div className="features-hero bg-gradient-to-b relative overflow-hidden from-blue-900 via-blue-800 to-white min-h-screen">
         <div data-aos="zoom-in" className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <h1 className='mt-10 font-extrabold text-3xl md:text-5xl text-center text-white pt-38'>Smart School Management,</h1>
           <h3 className='text-center text-lg md:text-xl text-white break-words md:w-[60%] mx-auto py-10'>Elite EdTech provides cutting-edge technology solutions for schools across Nigeria, streamlining administration and enhancing the learning experience.</h3>
@@ -68,10 +68,10 @@ export default function Features() {
             <i className='animate-bounce delay-150'>🧠</i>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className='container px-8 m-auto pt-8'>
         <div className="flex flex-col py-8">
-          <h1 className="tracking-wide text-indigo-800 font-bold text-2xl text-center mt-5 md:text-3xl">Smart Features That Transform Learning</h1>
+          <h1 className="tracking-wide text-[#00356B] dark:text-[#A51C30] font-bold text-2xl text-center mt-5 md:text-3xl">Smart Features That Transform Learning</h1>
         </div>
         {products.map((product, index) => { 
           const isEven = index % 2 === 0;
@@ -84,11 +84,11 @@ export default function Features() {
               </div>
             </div>
             <div className={`${isEven ? "md:order-1" : "md:order-2"} mb-10 md:mb-0`} data-aos={isEven ? "zoom-in-right" : "zoom-in-left"}>
-              <h1 className='font-bold text-indigo-600 text-2xl mt-2'>{product.title}</h1>
-              <p className="text-gray-600 my-4">{product.text}</p>
+              <h1 className='font-bold text-[#00356B] dark:text-[#A51C30] text-2xl mt-2'>{product.title}</h1>
+              <p className="text-gray-600 dark:text-gray-400 my-4">{product.text}</p>
               {product.listProducts.map((listProduct, i) => (
                 <ul className="mb-1">
-                  <li key={i} className="mb-1 flex gap-2"><span className='text-blue-600'><Check /></span>{listProduct}</li>
+                  <li key={i} className="mb-1 flex gap-2 text-[#00356B] dark:text-[#A51C30]"><span className='text-[#00356B] dark:text-[#A51C30]'><Check /></span>{listProduct}</li>
               </ul>
               ))}
               <div className="max-w-[120px] mt-5"><Button type={"btn-danger"} text={"Try it Now"}/></div>

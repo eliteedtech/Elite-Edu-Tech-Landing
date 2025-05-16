@@ -1,6 +1,7 @@
 import { useState } from "react";
 // import Carousel from "../components/Carousel";
 import TestimonialsCard from "../components/ui/TestimonialsCard";
+// import { Circle } from "lucide-react";
 let testimonials = [
   {
     image: "assets/testimonial images/alex-suprun.jpg",
@@ -33,12 +34,12 @@ let testimonials = [
 
 export default function Testimonial() {
   return (
-    <div className=" flex justify-center w-full bg-indigo-50 ">
+    <div className=" flex justify-center w-full bg-white dark:bg-gray-950 ">
       <div className="py-20 mx-5 flex flex-col lg:max-w-[1024px] md:max-w-[737px] sm:max-w-[600px] justify-center items-center">
-        <h3 className="text-3xl font-bold text-indigo-900 mb-4">
+        <h3 className="text-3xl font-bold text-[#00356B] dark:text-[#A51C30] mb-4">
           What Our Users Say
         </h3>
-        <p className="text-gray-600 mb-5 text-center text-md">
+        <p className="text-gray-600 dark:text-gray-400 mb-5 text-center text-md">
           Hear from schools that have transformed their management with Elite
           EdTech
         </p>
