@@ -1,8 +1,14 @@
 import React, { useEffect } from 'react'
+
+// ---------Animation----------
 import Aos from 'aos'
 import 'aos/dist/aos.css';
+
+// -----------Images-----------
+import OurTeam from "../assets/about/our-team4.jpg"
+
+
 export default function About2() {
-  
   const misVis = [{title: "Our Mission", text: "To empower schools across Nigeria with technology that simplifies administration, enhances teaching, and improves learning outcomes for every student."},
                   {title: "Our Vision", text: "We envision a future where every school in Africa has access to affordable, efficient, and culturally relevant technology solutions."}
   ]
@@ -24,7 +30,7 @@ export default function About2() {
         </div>
         <div className="md:flex-row items-center flex flex-col gap-12 pt-7 md:pt-0">
             <div data-aos="zoom-in-right" className="md:w-1/2 max-w-xl h-[300px] text-2xl flex justify-center items-center ">
-              <img alt="Our Team" src="https://placehold.co/600x400/blue/white?text=Our+Team" class="hover:shadow-indigo-200/50 transition rounded-xl shadow-2xl" />   
+              <img alt="Our Team" src={OurTeam} class="hover:shadow-indigo-200/50 transition rounded-xl shadow-2xl" />   
             </div>
           <div className="md:w-1/2 py-8 md:py-0">
             <div data-aos="zoom-out-down" className="">
