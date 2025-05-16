@@ -13,6 +13,10 @@ import Testimonial from "./Testimonial"
 import Pricing from "./Pricing"
 import GetinTouch from "./GetinTouch"
 import Features from "./Features"
+import Hero from "./Hero"
+import Institutions from "./Institutions"
+import About from "./About"
+import FAQSections from "./FAQSections"
 // Intersection Observer for scroll animations
 const useIntersectionObserver = (options = {}) => {
   const ref = useRef(null)
@@ -48,12 +52,20 @@ const Home = () => {
   const ctaRef = useIntersectionObserver({ threshold: 0.1 })
   const blogRef = useIntersectionObserver({ threshold: 0.1 })
   const getintouchRef = useIntersectionObserver({ threshold: 0.1 })
+  const heroRef = useIntersectionObserver({ threshold: 0.1 })
+  const institutionsRef = useIntersectionObserver({ threshold: 0.1 })
+  const aboutRef = useIntersectionObserver({ threshold: 0.1 })
+  const faqSectionRef = useIntersectionObserver({ threshold: 0.1 })
 
   return (
     <main className="min-h-screen flex flex-col bg-white dark:bg-gray-950 transition-colors duration-300">
+      <Hero ref={heroRef} />
+      <About ref={aboutRef} />
       <Features ref={featuresRef} />
       <Pricing ref={pricingRef} />
       <Testimonial ref={testimonialRef} />
+      <Institutions ref={institutionsRef} />
+      <FAQSections ref={faqSectionRef} />
       <GetinTouch ref={getintouchRef} />
     </main>
   )

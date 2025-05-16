@@ -112,9 +112,9 @@ const Header = () => {
             ></span>
           </Link>
           <Link
-            to="/contact"
+            to="/getintouch"
             className={`${
-              isActive("/contact")
+              isActive("/getintouch")
                 ? "text-[#00356B] dark:text-[#00356B]"
                 : "text-[#00356B]/70 dark:text-[#00356B]/70 hover:text-[#00356B]/70 dark:hover:text-[#00356B]/70"
             } transition-all duration-300 relative group`}
@@ -199,14 +199,14 @@ const Header = () => {
               Pricing
             </Link>
             <Link
-              to="/contact"
+              to="/getintouch"
               className={`${
-                isActive("/contact") ? "text-[#00356B] dark:text-[#00356B]" : "text-[#00356B]/70 dark:text-[#00356B]/70"
+                isActive("/getintouch") ? "text-[#00356B] dark:text-[#00356B]" : "text-[#00356B]/70 dark:text-[#00356B]/70"
               } hover:text-[#00356B]/70 dark:hover:text-[#00356B]/70 transition-all duration-300`}
             >
-              Contact
+              Get in Touch
             </Link>
-            <div className="mt-4">
+            <div className="mt-4 md:hidden">
               <Button variant="outline" size="lg">
                 Get Started
               </Button>
