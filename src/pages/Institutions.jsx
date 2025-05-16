@@ -1,7 +1,17 @@
 import React from "react";
+import 'aos/dist/aos.css'
+import Aos from "aos";
+import { useEffect } from "react";
 function Institutions(){
+
+     useEffect(()=> {
+          Aos.init({
+            duration: 1000,
+          })
+        })
+    
    return(
-    <div className="bg-gray-50 pb-16">
+    <div data-aos="fade-up" className="bg-gray-50 pb-16">
     <h1 className="text-3xl  md:text-4xl font-bold text-indigo-900 text-center mb-3 pt-16">Trusted by Leading Institutions</h1>
     <p className="text-semi-bold text-xl text-gray-500 mb-3 text-center">Join thousands of schools and universities already using Elite Edu Tech</p>
     <div className="flex justify-center p-10">

@@ -5,6 +5,7 @@ import ErrorPage from "../pages/ErrorPage"
 import Layout from "../components/layout/Layout"
 import Features from "../pages/Features"
 import About2 from "../pages/About2"
+import Pricing from '../pages/Pricing'
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,13 @@ const router = createBrowserRouter([
         path: "/about",
         element: <About2 />,
       },
+      {
+        path: "/pricing",
+        element: <Pricing />,
+      },
+      
+    
+      
       // Add more routes here
     ],
   },

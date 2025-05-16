@@ -49,7 +49,27 @@ export default function Features() {
                     
   return (
     <section className='features-wrapper min-h-screen pb-16'>
-      <div className=' container px-8 m-auto pt-8'>
+      <div className="features-hero bg-gradient-to-b relative overflow-hidden from-blue-900 via-blue-800 to-white min-h-screen">
+        <div data-aos="zoom-in" className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <h1 className='mt-10 font-extrabold text-3xl md:text-5xl text-center text-white pt-38'>Smart School Management,</h1>
+          <h3 className='text-center text-lg md:text-xl text-white break-words md:w-[60%] mx-auto py-10'>Elite EdTech provides cutting-edge technology solutions for schools across Nigeria, streamlining administration and enhancing the learning experience.</h3>
+          <div className="flex justify-center gap-6">
+            <div className="pt-1">
+              <Button type="btn-custom" 
+                customBtnStyle="w-full hover:scale-105 text-white bg-red-600 px-5 font-semibold p-[10px] min-w-24 font-sans cursor-pointer rounded-lg transition duration-200 shadow-2xl cursor-pointer hover:shadow-xl " 
+                text="Get Started" /></div>
+            <div className=""><Button type="btn-custom" 
+                customBtnStyle="w-full hover:scale-105 text-indigo-600 border-2 border-white px-5 p-[14px] min-w-24 font-sans text-white font-bold rounded-lg transition duration-200 cursor-pointer shadow-2xl cursor-pointer  hover:shadow-xl" 
+                text="Request a Demo" /></div>
+          </div>
+          <div className="flex justify-center gap-5 text-3xl pt-5">
+            <i className='animate-bounce delay-150'>🎓</i>
+            <i className='animate-pulse'>📖</i>
+            <i className='animate-bounce delay-150'>🧠</i>
+          </div>
+        </div>
+      </div>
+      <div className='container px-8 m-auto pt-8'>
         <div className="flex flex-col py-8">
           <h1 className="tracking-wide text-indigo-800 font-bold text-2xl text-center mt-5 md:text-3xl">Smart Features That Transform Learning</h1>
         </div>
