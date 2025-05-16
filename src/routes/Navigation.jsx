@@ -4,11 +4,9 @@ import Home from "../pages/Home"
 import ErrorPage from "../pages/ErrorPage"
 import Layout from "../components/layout/Layout"
 import Features from "../pages/Features"
-import Pricing from "../pages/Pricing"
-import Testimonial from "../pages/Testimonial"
-import Institutions from "../pages/Institutions"
-import FAQSections from "../pages/FAQSections"
-import GetinTouch from "../pages/GetinTouch"
+import About2 from "../pages/About2"
+import Pricing from '../pages/Pricing'
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,32 +16,22 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-
       },
       {
         path: "/features",
         element: <Features />,
       },
       {
+        path: "/about",
+        element: <About2 />,
+      },
+      {
         path: "/pricing",
         element: <Pricing />,
       },
-      {
-        path: "/testimonial",
-        element: <Testimonial />,
-      },
-      {
-        path: "/institutions",
-        element: <Institutions />,
-      },
-      {
-        path: "/faq",
-        element: <FAQSections />,
-      },
-      {
-        path: "/getintouch",
-        element: <GetinTouch />,
-      },
+      
+    
+      
       // Add more routes here
     ],
   },

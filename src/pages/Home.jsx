@@ -1,22 +1,15 @@
 "use client"
 
 import { useEffect, useRef } from "react"
-import { BookOpen, Users, Lightbulb, CheckCircle } from "lucide-react"
-import Button from "../components/ui/button"
-import SectionTitle from "../components/ui/section-title"
-import FeatureCard from "../components/ui/feature-card"
-import TestimonialCard from "../components/ui/testimonial-card"
-import StatCard from "../components/ui/stats-card"
-import Card from "../components/ui/card"
-import Badge from "../components/ui/badge"
 import Testimonial from "./Testimonial"
-import Pricing from "./Pricing"
-import GetinTouch from "./GetinTouch"
-import Features from "./Features"
 import Hero from "./Hero"
-import Institutions from "./Institutions"
 import About from "./About"
+import Features from "./Features"
+import Pricing from "./Pricing"
+import Institutions from "./Institutions"
 import FAQSections from "./FAQSections"
+import GetinTouch from "./GetinTouch"
+
 // Intersection Observer for scroll animations
 const useIntersectionObserver = (options = {}) => {
   const ref = useRef(null)
@@ -48,9 +41,6 @@ const Home = () => {
   const featuresRef = useIntersectionObserver({ threshold: 0.1 })
   const pricingRef = useIntersectionObserver({ threshold: 0.1 })
   const testimonialRef = useIntersectionObserver({ threshold: 0.1 })
-  const statsRef = useIntersectionObserver({ threshold: 0.1 })
-  const ctaRef = useIntersectionObserver({ threshold: 0.1 })
-  const blogRef = useIntersectionObserver({ threshold: 0.1 })
   const getintouchRef = useIntersectionObserver({ threshold: 0.1 })
   const heroRef = useIntersectionObserver({ threshold: 0.1 })
   const institutionsRef = useIntersectionObserver({ threshold: 0.1 })
