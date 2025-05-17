@@ -19,7 +19,7 @@ const ErrorPage = () => {
       </p>
 
       <div className="space-y-4">
-        <Button variant="primary" size="lg" className="w-full md:w-auto" onClick={() => window.history.back()}>
+        <Button variant="primary" size="lg" className="w-full m-auto" onClick={() => window.history.back()}>
           Go Back
         </Button>
 
