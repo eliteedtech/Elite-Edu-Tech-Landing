@@ -4,7 +4,7 @@ import TestimonialsCard from "../components/ui/TestimonialsCard";
 // import { Circle } from "lucide-react";
 let testimonials = [
   {
-    image: "assets/testimonial images/alex-suprun.jpg",
+    image: "src/assets/testimonial images/alex-suprun.jpg",
     testimony:
       "1- The AI Learning Assistant has completely changed how I study. It's like having a personal tutor available 24/7. My grades have improved significantly since I started using Elite Edu Tech, and I feel much more confident in my abilities.",
     testifier: "Alex Prun",
@@ -13,7 +13,7 @@ let testimonials = [
     rating: 5,
   },
   {
-    image: "assets/testimonial images/diego.jpg",
+    image: "src/assets/testimonial images/diego.jpg",
     testimony:
       "Person 2  - The AI Learning Assistant has completely changed how I study.It's like having a personal tutor available 24/7. My grades have improved significantly since I started using Elite Edu Tech, and I feel much more confident in my abilities.",
     testifier: "Diego",
@@ -22,7 +22,7 @@ let testimonials = [
     rating: 2,
   },
   {
-    image: "assets/testimonial images/alex-suprun.jpg",
+    image: "src/assets/testimonial images/alex-suprun.jpg",
     testimony:
       "Person 3 - The AI Learning Assistant has completely changed how I study.It's like having a personal tutor available 24/7. My grades have improved significantly since I started using Elite Edu Tech, and I feel much more confident in my abilities.",
     testifier: "Oguy Yagiz",
