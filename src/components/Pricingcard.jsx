@@ -17,7 +17,7 @@ const Pricingcard = ({ title, price, description, features, isPopular, isEnterpr
   ];
   return (
     <div data-aos="zoom-in-out"
-      className={`relative flex flex-col justify-between rounded-2xl shadow-md  h-full bg-white dark:bg-gray-950 
+      className={`relative flex flex-col justify-between  rounded-2xl shadow-md  h-full bg-white dark:bg-gray-950 
         hover:shadow-xl transition-transform duration-300 overflow-hidden dark:border dark:border-[#00356B] ${
           isPopular ? 'scale-105 border-[#A51C30] dark:border-[#A51C30]' : 'hover:shadow-[0_4px_10px_rgba(59,130,246,0.5)] dark:hover:shadow-[0_4px_10px_rgba(59,130,246,0.5)]'
         }`}

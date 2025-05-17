@@ -19,7 +19,7 @@ function App() {
   }, [])
 
   return (
-    <div className="min-h-screen flex items-center  justify-center">
+    <div className="min-h-screen flex  items-center  justify-center">
       <div className="w-full max-w-6xl px-4">
         <h1 className="text-center text-3xl md:text-4xl font-extrabold text-[#00356B] dark:text-[#A51C30] mb-4">
           Simple, Transparent Pricing
@@ -34,7 +34,7 @@ function App() {
           ))}
         </div>
         
-        <div className="mt-12" data-aos="zoom-out-right">
+        <div  data-aos="zoom-out-right">
           <Addons items={addonPlans} />
         </div>
       </div>
