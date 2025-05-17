@@ -19,9 +19,8 @@ export default function TestimonialsCard({ image, rating, testimony, testifier, 
       <div
         className="my-10 mb-0 w-full md:max-w-[216px]  lg:max-w-[384px]  md:max-h-[512px] md:mr-5"
         data-aos="fade-up "
-        
       >
-        <div className="flex dark:shadow-xl py-5 px-6   flex-col rounded-xl bg-white dark:bg-gray-950 w-full justify-center items-center dark:rounded-xl dark:border dark:border-[#A51C30]  dark:shadow-[0_0_10px_0_rgba(0,0,0,0.1)] dark:rounded-xl ">
+        <div className="flex dark:shadow-xl shadow-2xl py-5 px-6   flex-col rounded-xl bg-white dark:bg-gray-950 w-full justify-center items-center dark:rounded-xl dark:border dark:border-[#A51C30]  dark:shadow-[0_0_10px_0_rgba(0,0,0,0.1)] dark:rounded-xl ">
           <div className="flex w-full justify-left items-center">
             <img
               src={image}
@@ -29,8 +28,12 @@ export default function TestimonialsCard({ image, rating, testimony, testifier, 
               className="rounded-full my-2 mr-5 size-12 md:ml-1"
             />
             <div className="w-full text-left">
-              <h4 className="font-bold text-[#00356B] dark:text-[#A51C30]">{testifier}</h4>
-              <p className="text-gray-700 dark:text-gray-400  text-sm mb-1">{testifierInfo}</p>
+              <h4 className="font-bold text-[#00356B] dark:text-[#A51C30]">
+                {testifier}
+              </h4>
+              <p className="text-gray-700 dark:text-gray-400  text-sm mb-1">
+                {testifierInfo}
+              </p>
             </div>
           </div>
 
@@ -47,7 +50,9 @@ export default function TestimonialsCard({ image, rating, testimony, testifier, 
           </div>
 
           <div className="md:flex md:flex-col md:mx-2 mb-3 md:w-full ">
-            <p className="text-gray-700 dark:text-gray-400 my-5 mt-1">{testimony}</p>
+            <p className="text-gray-700 dark:text-gray-400 my-5 mt-1">
+              {testimony}
+            </p>
             <p className="w-full text-left dark:text-gray-400">
               <StarsRating rating={rating} />
             </p>
