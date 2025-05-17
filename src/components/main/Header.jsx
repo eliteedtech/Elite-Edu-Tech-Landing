@@ -5,6 +5,7 @@ import { Link, useLocation } from "react-router-dom"
 import { useTheme } from "../../context/ThemeContext"
 import Button from "../ui/button"
 import { Sun, Moon, Menu, X } from "lucide-react"
+import Logo from "../ui/Logo"
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -39,29 +40,27 @@ const Header = () => {
   return (
     <header
       className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-white/90 dark:bg-gray-900/90 backdrop-blur shadow-md py-2" : "bg-transparent py-4"
+        scrolled ? "bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm shadow-sm py-2" : "bg-transparent py-4"
       }`}
     >
       <div className="flex justify-between items-center px-4 mx-auto container">
         <Link to="/" className="z-50">
-          <h1 className="text-2xl font-bold text-[#00356B] dark:text-[#00356B] hover:text-[#00356B]/70 dark:hover:text-[#00356B]/70 transition-colors duration-300">
-            Elite Edu Tech
-          </h1>
+          <Logo size="sm" withText />
         </Link>
 
         {/* Desktop Navigation */}
         <div className="md:flex items-center gap-8 font-medium hidden">
           <Link
             to="/"
-            className={`${
+            className={`px-2 py-1 ${
               isActive("/")
-                ? "text-[#00356B] dark:text-[#00356B]"
-                : "text-[#00356B]/70 dark:text-[#00356B]/70 hover:text-[#00356B]/70 dark:hover:text-[#00356B]/70"
+                ? "text-[#A51C30] dark:text-[#00356B] font-semibold"
+                : "text-[#00356B] dark:text-[#A51C30] hover:text-[#A51C30] dark:hover:text-[#00356B]"
             } transition-all duration-300 relative group`}
           >
             Home
             <span
-              className={`absolute bottom-0 left-0 h-0.5 bg-[#00356B] dark:bg-[#00356B] transition-all duration-300 ${
+              className={`absolute bottom-0 left-0 h-0.5 bg-[#A51C30] dark:bg-[#00356B] transition-all duration-300 ${
                 isActive("/") ? "w-full" : "w-0 group-hover:w-full"
               }`}
             ></span>
@@ -112,9 +111,9 @@ const Header = () => {
             ></span>
           </Link>
           <Link
-            to="/contact"
+            to="/getintouch"
             className={`${
-              isActive("/contact")
+              isActive("/getintouch")
                 ? "text-[#00356B] dark:text-[#00356B]"
                 : "text-[#00356B]/70 dark:text-[#00356B]/70 hover:text-[#00356B]/70 dark:hover:text-[#00356B]/70"
             } transition-all duration-300 relative group`}
@@ -130,12 +129,12 @@ const Header = () => {
           <div className="flex items-center gap-4">
             <button
               onClick={toggleDarkMode}
-              className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300"
+              className="p-2 rounded-full border-2 border-[#00356B] dark:border-[#A51C30] text-[#00356B] dark:text-[#A51C30] hover:bg-[#00356B]/10 dark:hover:bg-[#A51C30]/10 transition-all duration-300"
               aria-label="Toggle dark mode"
             >
-              {darkMode ? <Sun size={18} /> : <Moon size={18} />}
+              {darkMode ? <Sun size={18} className="text-[#A51C30]" /> : <Moon size={18} className="text-[#00356B]" />}
             </button>
-            <Button variant="primary" size="md">
+            <Button variant="primary" size="md" className="bg-[#A51C30] dark:bg-[#00356B] hover:bg-[#00356B] dark:hover:bg-[#A51C30] text-white font-semibold">
               Get Started
             </Button>
           </div>
@@ -161,16 +160,16 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         <div
-          className={`fixed inset-0 bg-white dark:bg-gray-900 flex flex-col items-center justify-center transition-all duration-300 ${
+          className={`fixed inset-0 bg-white/95 dark:bg-gray-900/95 flex flex-col items-center justify-center transition-all duration-300 ${
             isMenuOpen ? "opacity-100 z-40" : "opacity-0 -z-10"
           }`}
         >
           <div className="flex flex-col items-center gap-6 text-lg font-medium">
             <Link
               to="/"
-              className={`${
-                isActive("/") ? "text-[#00356B] dark:text-[#00356B]" : "text-[#00356B]/70 dark:text-[#00356B]/70"
-              } hover:text-[#00356B]/70 dark:hover:text-[#00356B]/70 transition-all duration-300`}
+              className={`px-4 py-3 ${
+                isActive("/") ? "text-[#A51C30] dark:text-[#00356B] font-semibold" : "text-[#00356B] dark:text-[#A51C30] hover:text-[#A51C30] dark:hover:text-[#00356B]"
+              } transition-all duration-300`}
             >
               Home
             </Link>
@@ -199,14 +198,14 @@ const Header = () => {
               Pricing
             </Link>
             <Link
-              to="/contact"
+              to="/getintouch"
               className={`${
-                isActive("/contact") ? "text-[#00356B] dark:text-[#00356B]" : "text-[#00356B]/70 dark:text-[#00356B]/70"
+                isActive("/getintouch") ? "text-[#00356B] dark:text-[#00356B]" : "text-[#00356B]/70 dark:text-[#00356B]/70"
               } hover:text-[#00356B]/70 dark:hover:text-[#00356B]/70 transition-all duration-300`}
             >
-              Contact
+              Get in Touch
             </Link>
-            <div className="mt-4">
+            <div className="mt-4 md:hidden">
               <Button variant="outline" size="lg">
                 Get Started
               </Button>

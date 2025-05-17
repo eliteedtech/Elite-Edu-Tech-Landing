@@ -1,13 +1,13 @@
-import Accordion from "./Accordion";
+import Accordion from "../components/ui/Accordion";
 
 export default function FAQSections() {
     return (
-      <div className="flex mt-5 flex-col space-y-3 text-center bg-white w-full items-center justify-center md:mx-auto md:w-3xl ">
+      <div className="flex mt-5 flex-col space-y-3 text-center bg-white dark:bg-gray-950 w-full items-center justify-center md:mx-auto md:w-3xl ">
         <div className="p-3 w-full ">
-          <h2 className="text-3xl font-bold text-indigo-800 mb-3 md:text-4xl ">
+          <h2 className="text-3xl font-bold text-[#00356B] dark:text-[#A51C30] mb-3 md:text-4xl ">
             Frequently Asked Questions
           </h2>
-          <p className="text-xl text-gray-600 mb-14  md:mb-17">
+          <p className="text-xl text-gray-600 dark:text-gray-400 mb-14  md:mb-17">
             Find answers to common questions about our platform.
           </p>
 
@@ -46,7 +46,7 @@ export default function FAQSections() {
         </div>
         <a
           href="#"
-          className=" mt-8 mb-20 md:mt-5 text-indigo-500 font-semibold md:mb-20 md:text-md"
+          className=" mt-8 mb-20 md:mt-5 text-[#00356B] dark:text-[#A51C30] font-semibold md:mb-20 md:text-md"
         >
           View all FAQs
         </a>

@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="w-full bg-indigo-800 text-center  ">
+    <div className="w-full bg-[#00356B] dark:bg-[#A51C30] text-center  ">
       <div className="flex flex-col mx-4 md:mx-auto  py-8 justify-center items-center md:max-w-[730px]">
         <h3 className="text-white md:text-4xl font-bold text-3xl">
           Stay Updated with Educational Innovations
@@ -12,13 +12,13 @@ export default function Contact() {
 
         <div className="w-[446px] px-1 sm:max-w-[446px] justify-center items-center mt-8 flex sm:flex-row flex-col">
           <input
-            className="bg-white focus w-full sm:w-3xl focus:ring-2 focus:ring-indigo-400 focus:border-gray-700 focus:border-0 rounded-4xl flex-grow shadow-xl sm:mb-0 mb-3 px-4 py-3  sm:mr-3 border-0"
+            className="bg-white focus w-full sm:w-3xl focus:ring-2 focus:ring-[#A51C30] focus:border-gray-700 focus:border-0 rounded-4xl flex-grow shadow-xl sm:mb-0 mb-3 px-4 py-3  sm:mr-3 border-0"
             type="text"
             name="sm:pl-7 sm:pr-30"
             id=""
             placeholder="Enter your email address"
           />
-          <button className="sm:px-0  w-full font-bold px-4 py-3 sm:w-xs  rounded-4xl shadow-xl border border-indigo-400 bg-indigo-600 hover:bg-indigo-500 text-white">
+          <button className="sm:px-0  w-full font-bold px-4 py-3 sm:w-xs  rounded-4xl shadow-xl border border-[#A51C30] dark:border-[#00356B] bg-[#A51C30] dark:bg-[#00356B] hover:bg-[#00356B] dark:hover:bg-[#A51C30] text-white">
             Subscribe
           </button>
         </div>
@@ -26,7 +26,6 @@ export default function Contact() {
         <p className="mt-4 text-sm text-gray-200">
           We respect your privacy. Unsubscribe at any time.
         </p>
-
       </div>
     </div>
   );
