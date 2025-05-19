@@ -69,7 +69,7 @@ export default function Features() {
           </div>
         </div>
       </div> */}
-      <div className='container px-8 m-auto pt-8'>
+      <div className='container px-8 m-auto'>
         <div className="flex flex-col py-8">
           <h1 className="tracking-wide text-[#00356B] dark:text-[#A51C30] font-bold text-2xl text-center mt-5 md:text-3xl">Smart Features That Transform Learning</h1>
         </div>
@@ -77,13 +77,16 @@ export default function Features() {
           const isEven = index % 2 === 0;
           
           return(
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 md:mt-15 md:mb-25'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 md:mt-10 '>
             <div className={`border-indigo-200  ${isEven ? "md:order-2" : "md:order-1"} mb-10 md:mb-0`} data-aos={isEven ? "zoom-in-left" : "zoom-in-right"}>
               <div className="w-full max-w-xl h-[300px] text-2xl flex justify-center items-center md:mb-24">
-                <img alt={product.cardName} src={product.image} class="hover:shadow-indigo-200/50 transition rounded-xl shadow-2xl" />   
+                <img 
+                    alt={product.cardName} 
+                    src={product.image} 
+                    className="md:w-[550px] h-[250px] md:h-[350px] hover:shadow-indigo-200/50 transition rounded-xl shadow-2xl" />   
               </div>
             </div>
-            <div className={`${isEven ? "md:order-1" : "md:order-2"} mb-10 md:mb-0`} data-aos={isEven ? "zoom-in-right" : "zoom-in-left"}>
+            <div className={`${isEven ? "md:order-1" : "md:order-2"}`} data-aos={isEven ? "zoom-in-right" : "zoom-in-left"}>
               <h1 className='font-bold text-[#00356B] dark:text-[#A51C30] text-2xl mt-2'>{product.title}</h1>
               <p className="text-gray-600 dark:text-gray-400 my-4">{product.text}</p>
               {product.listProducts.map((listProduct, i) => (
