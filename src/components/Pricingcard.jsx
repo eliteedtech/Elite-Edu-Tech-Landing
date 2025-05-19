@@ -17,26 +17,26 @@ const Pricingcard = ({ title, price, description, features, isPopular, isEnterpr
   ];
   return (
     <div data-aos="zoom-in-out"
-      className={`relative flex flex-col justify-between  rounded-2xl shadow-md  h-full bg-white dark:bg-gray-950 
+      className={`relative  h-full flex flex-col justify-between  rounded-2xl shadow-md  bg-white dark:bg-gray-950 
         hover:shadow-xl transition-transform duration-300 overflow-hidden dark:border dark:border-[#00356B] ${
-          isPopular ? 'scale-105 border-[#A51C30] dark:border-[#A51C30]' : 'hover:shadow-[0_4px_10px_rgba(59,130,246,0.5)] dark:hover:shadow-[0_4px_10px_rgba(59,130,246,0.5)]'
+          isPopular ? '   border-[#A51C30] dark:border-[#A51C30]' : 'hover:shadow-[0_4px_10px_rgba(59,130,246,0.5)] dark:hover:shadow-[0_4px_10px_rgba(59,130,246,0.5)]'
         }`}
         style={{ fontFamily: 'Inter, sans-serif' }}
     >
     
       {isPopular && (
-        <div className="bg-[#A51C30] text-white dark:text-[#00356B] font-bold text-xs px-3 py-1 rounded-bl-xl  absolute top-0 right-0 uppercase z-10 shadow dark:shadow-[0_4px_10px_rgba(59,130,246,0.5)]">
+        <div className="bg-[#A51C30] text-white dark:text-[#00356B] font-bold text-xs px-3 py-2 rounded-bl-xl  absolute top-0 right-0 uppercase z-10 shadow dark:shadow-[0_4px_10px_rgba(59,130,246,0.5)]">
           Popular
         </div>
       )}
 
-      <div className={`p-6 border-t-4 ${isPopular ?  "border-[#A51C30]" :  "border-[#00356B]" }`}>
-        <h1 className="text-xl font-bold text-[#00356B] dark:text-[#A51C30] mb-3 mt-3">{title}</h1>
-        <p className="mb-4  text-gray-600 dark:text-gray-400">{description}</p>
+      <div className={`pl-6 py-2 border-t-4 ${isPopular ?  "border-[#A51C30]" :  "border-[#00356B]" }`}>
+        <h1 className="text-xl font-bold text-[#00356B] dark:text-[#A51C30] mb-2 mt-2">{title}</h1>
+        <p className="mb-2 text-gray-600 dark:text-gray-400">{description}</p>
         {/* <p className='mb-4'>{price}</p> */}
         
       
-        <ul className="space-y-3 mb-6">
+        <ul className="space-y-2">
         {features.map((feature, index) => {
         const isSpecialInStarter =
         title === "Starter" &&
@@ -48,7 +48,7 @@ const Pricingcard = ({ title, price, description, features, isPopular, isEnterpr
     return (
       <li
         key={index}
-        className={`flex items-start dark:text-gray-400  ${
+        className={`flex items-start  lg:text-base  md:text-base sm:text-xs dark:text-gray-400  ${
           isSpecialFeature ? ' text-gray-400' : 'text-gray-500'
         }  `}
       >
@@ -76,10 +76,10 @@ const Pricingcard = ({ title, price, description, features, isPopular, isEnterpr
       </div>
 
     
-      <div className="bg-gray-50 dark:bg-gray-950 py-4 px-6 rounded-b-md dark:border-gray-950">
+      <div className="bg-gray-50 dark:bg-gray-950 py-2 px-3 rounded-b-md dark:border-gray-950">
         <a
           href="#"
-          className={`rounded-md w-full block text-center px-4 py-2 mt-1 font-medium
+          className={`rounded-md w-full block text-center px-4 py-2 mb-1  font-medium
           ${
             isPopular
               ? 'bg-[#A51C30] text-white hover:bg-[#A51C30]'

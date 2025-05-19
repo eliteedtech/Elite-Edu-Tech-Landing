@@ -1,18 +1,18 @@
 const pricingPlans = [
-    {
-      // title: "Starter",
-      // price: "0",
-      // description: "For small schools up to 100 students.",
-      // features: [
-      //   "Basic student management",
-      //   "Gradebook",
-      //   "Attendance tracking",
-      //   "Basic reporting",
-      //   "Financial management",
-      //   "Student portal",
+    // {
+    //   title: "Starter",
+    //   price: "0",
+    //   description: "For small schools up to 100 students.",
+    //   features: [
+    //     "Basic student management",
+    //     "Gradebook",
+    //     "Attendance tracking",
+    //     "Basic reporting",
+    //     "Financial management",
+    //     "Student portal",
         
-      // ],
-    },
+    //   ],
+    // },
 
     {
       title: "Standard",
@@ -42,20 +42,20 @@ const pricingPlans = [
       isPopular: true,
     },
    
-    {
-      // title: "Enterprise",
-      // price: "29",
-      // description: "For large schools with 500+ students",
-      // features: [
-      //  " Everything in Premium",
-      //   "Customized solutions",
-      //  " API access",
-      //   "Dedicated support team",
-      //  " On-site training",
-      //   "Custom integrations",
-      // ],
-      // isEnterprice :true,
-    },
+    // {
+    //   title: "Enterprise",
+    //   price: "29",
+    //   description: "For large schools with 500+ students",
+    //   features: [
+    //    " Everything in Premium",
+    //     "Customized solutions",
+    //    " API access",
+    //     "Dedicated support team",
+    //    " On-site training",
+    //     "Custom integrations",
+    //   ],
+    //   isEnterprice :true,
+    // },
   ];
   
   export default pricingPlans;
