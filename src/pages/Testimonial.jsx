@@ -4,35 +4,50 @@ import TestimonialsCard from "../components/ui/TestimonialsCard";
 // import { Circle } from "lucide-react";
 let testimonials = [
   {
-    image: "src/assets/testimonial images/alex-suprun.jpg",
+    // image: "src/assets/testimonial images/alex-suprun.jpg",
+    testifierFirstName: 'Ahmed',
+    testifierLastName: 'Muhammad',
     testimony:
-      "1- The AI Learning Assistant has completely changed how I study. It's like having a personal tutor available 24/7. My grades have improved significantly since I started using Elite Edu Tech, and I feel much more confident in my abilities.",
-    testifier: "Alex Prun",
-    testifierInfo: "Undergraduate Student, Stanford University",
+      `Elite EdTech has completely transformed how
+      we manage our scholl. The attendance system has
+      improved punctuality, and parents love being able to
+      track their children's progress through the parent portal`,
+    // testifier: "Ahmed Muhammad",
+    testifierInfo: "Principal, Kano Science Academy",
     isActive: true,
     rating: 5,
   },
   {
-    image: "src/assets/testimonial images/diego.jpg",
+    // image: "src/assets/testimonial images/diego.jpg",
+    testifierFirstName: 'Fatima',
+    testifierLastName: 'Okoye',
     testimony:
-      "Person 2  - The AI Learning Assistant has completely changed how I study.It's like having a personal tutor available 24/7. My grades have improved significantly since I started using Elite Edu Tech, and I feel much more confident in my abilities.",
-    testifier: "Diego",
-    testifierInfo: "Undergraduate Student, Stanford University",
+      `The grading system has saved me hours of work
+      each week. I can now focus more on teaching and less
+      on administrative tasks. The student analytics help 
+      me identify which students need extra attention.`,
+    // testifier: "Fatima Okoye",
+    testifierInfo: "Teacher, Lagos Model School",
     isActive: false,
-    rating: 2,
+    rating: 5,
   },
   {
-    image: "src/assets/testimonial images/alex-suprun.jpg",
+    // image: "src/assets/testimonial images/alex-suprun.jpg",
+    testifierFirstName: 'David',
+    testifierLastName: 'Ibrahim',
     testimony:
-      "Person 3 - The AI Learning Assistant has completely changed how I study.It's like having a personal tutor available 24/7. My grades have improved significantly since I started using Elite Edu Tech, and I feel much more confident in my abilities.",
-    testifier: "Oguy Yagiz",
+      `The student portal makes it easy to keep track of my
+      assignments and grades. I can access study materials anytime
+      and the notification system ensures i never mis important deadlines or events.`,
+    // testifier: "David Ibrahim",
     testifierInfo: "Undergraduate Student, Stanford University",
     isActive: false,
-    rating: 4,
+    rating: 5,
   },
 ];
 
 export default function Testimonial() {
+
   return (
     <div className=" flex justify-center w-full bg-white dark:bg-gray-950 ">
       <div className="py-20 mx-5 flex flex-col lg:max-w-[1024px] md:max-w-[737px] sm:max-w-[600px] justify-center items-center">
@@ -48,17 +63,22 @@ export default function Testimonial() {
         <div className="w-full  ">
           <div className="w-full px-5 flex flex-col md:flex-row justify-center items-center md:justify md:items-center">
             {testimonials.map((testimonial, index) => {
+
+                const firstLetter = testimonial.testifierFirstName?.charAt(0)?.toUpperCase() || "";
+                const lastLetter = testimonial.testifierLastName?.charAt(0)?.toUpperCase() || "";
+
               return (
-                <>
                   <TestimonialsCard
-                    image={testimonial.image}
+                    key={index}
+                    // image={testimonial.image}
+                    Letters={firstLetter + lastLetter}
                     testimony={testimonial.testimony}
-                    testifier={testimonial.testifier}
+                    testifierFirstName={testimonial.testifierFirstName}
+                    testifierLastName={testimonial.testifierLastName}
                     testifierInfo={testimonial.testifierInfo}
                     isActive={testimonial.isActive}
                     rating={testimonial.rating}
                   />
-                </>
               );
             })}
           </div>
