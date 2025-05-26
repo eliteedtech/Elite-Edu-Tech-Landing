@@ -69,7 +69,7 @@ export default function Features() {
           </div>
         </div>
       </div> */}
-      <div className='container px-8 m-auto'>
+      <div className='container px-8 m-auto dark:bg-gray-950'>
         <div className="flex flex-col py-8">
           <h1 className="tracking-wide text-[#00356B] dark:text-[#A51C30] font-bold text-2xl text-center mt-5 md:text-3xl">Smart Features That Transform Learning</h1>
         </div>

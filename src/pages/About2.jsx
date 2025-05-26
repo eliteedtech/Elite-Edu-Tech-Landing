@@ -23,7 +23,7 @@ export default function About2() {
     })
   }, )
   return (
-    <section className='min-h-screen mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl md:py-7'  data-aos="fade-right">
+    <section className='min-h-screen mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl md:py-7 dark:bg-gray-950'  data-aos="fade-right">
         <div className='about-text flex flex-col my-8'>
           <h1 className="tracking-wide text-[#00356B] dark:text-[#A51C30] font-bold text-3xl md:text-4xl text-center mt-8">About Elite EdTech</h1>
           <p className=" text-gray-600 dark:text-gray-400 text-md my-3 max-w-2xl mx-auto text-center">Revolutionizing education technology across Nigeria with solutions built for African schools</p>

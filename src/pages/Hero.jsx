@@ -14,8 +14,7 @@ function Hero() {
     })
   })
   return (
-    <div className=' w-full md:pt-0 pt-16 pb-10 md:pb-0'>
-      
+    <div className='bg-gradient-to-br from-indigo-600 to-red-500 w-full md:pt-0 pt-16 pb-10 md:pb-0'>
       <div className="flex px-4 md:flex-row gap-y-10 flex-col items-center pt-20 min-h-screen mx-auto  container">
         <div className="relative md:w-3/6 md:text-start text-center ">
           <div className='absolute right-[265px] top-[-25px]'><i className="fa-solid fa-circle text-[80px] text-white/10"></i></div>

@@ -1,24 +1,3 @@
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
-
-.custom-shape-divider-top-1748249892 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-top-1748249892 svg {
-    position: relative;
-    display: block;
-    width: calc(140% + 1.3px);
-    height: 138px;
-}
-
-.custom-shape-divider-top-1748249892 .shape-fill {
-    fill: red;
-}

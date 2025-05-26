@@ -14,7 +14,7 @@ export default function About() {
   ]
 
   return (
-    <section className='about-wrapper min-h-screen pb-10'>
+    <section className='about-wrapper min-h-screen pb-10 '>
       <div className='about-text flex flex-col my-8'>
         <h1 className="tracking-wide text-indigo-900 font-bold text-4xl text-center mt-8">Powerful Features for Modern Schools</h1>
         <p className=" text-gray-600 text-xl my-3 max-w-2xl mx-auto text-center">Everything you need to run your school efficiently in one integrated platform</p>

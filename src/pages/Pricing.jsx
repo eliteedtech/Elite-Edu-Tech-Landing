@@ -19,7 +19,7 @@ function App() {
   }, [])
    
   return (
-    <div className=" flex  flex-col items-center  justify-center   my-3  ">
+    <div className=" flex  flex-col items-center  justify-center   pb-10 pt-20  dark:bg-gray-950">
       <div className=" w-full max-w-6xl px-4 ">
       <h1 className="text-center text-3xl md:text-4xl font-bold text-[#00356B] dark:text-[#A51C30] mb-1">
           Simple, Transparent Pricing
