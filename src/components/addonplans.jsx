@@ -2,7 +2,7 @@ const addonPlans = [
     {
       title: "Biometric Hardware",
       description: "Fingerprint scanners for attendance tracking",
-      
+     
     },
     {
       title: "SMS Bundle",
