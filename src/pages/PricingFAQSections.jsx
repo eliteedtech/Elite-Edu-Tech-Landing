@@ -6,38 +6,37 @@ import Accordion from "../components/ui/Accordion"
 export default function FAQSections() {
   const faqs = [
     {
-      title: "How does Elite Edu Tech protect user data?",
+      title: "What's the difference between Basic and Standard plans?",
       answer:
-        "We take privacy and security seriously. All user data is end-to-end encrypted, stored securely, and handled in compliance with global standards like GDPR, FERPA, and COPPA. We perform regular audits and never share data with third parties.",
+        "The Basic plan includes essential features like class management, grading, and report cards. The Standard plan adds advanced features like timetable scheduling, assignments module, analytics, parent access, and custom branding.",
       defaultOpen: true,
     },
     {
-      title: "Can Elite Edu Tech work with our current school systems?",
+      title: "Can I upgrade from Basic to Standard plan anytime?",
       answer:
-        "Absolutely. Elite Edu Tech is built to integrate with popular LMS platforms such as Google Classroom, Moodle, Blackboard, and Canvas. We also offer robust APIs for custom integrations with your internal systems.",
+        "Yes, you can upgrade your plan at any time. The price difference will be prorated for the remaining term period, and all your data will be preserved during the upgrade.",
     },
     {
-      title: "Is onboarding or training required?",
+      title: "Are the add-ons compatible with both plans?",
       answer:
-        "Getting started is easy. We provide hands-on onboarding support, live training sessions, step-by-step guides, and video tutorials to make sure your team is confident using our tools from day one.",
+        "Yes, all premium add-ons are compatible with both Basic and Standard plans. You can mix and match add-ons based on your school's specific needs.",
     },
     {
-      title: "What devices or infrastructure do we need?",
+      title: "How does the payment system work?",
       answer:
-        "Elite Edu Tech works on any device — desktops, tablets, or smartphones. It supports all major browsers and is optimized for low-bandwidth environments, making it ideal for both urban and rural schools.",
+        "Payments are made per term. You can pay via bank transfer, card payment, or mobile money. We also offer flexible payment plans for larger institutions.",
     },
     {
-      title: "What does the AI Assistant actually do?",
+      title: "Is there a free trial available?",
       answer:
-        "Our AI-powered assistant is like a personal tutor. It helps students with homework, explains tough concepts, and even recommends study material — all in real time, 24/7, and in multiple languages.",
+        "Yes, we offer a 30-day free trial for both plans. This includes full access to all features so you can evaluate the system before making a commitment.",
     },
     {
-      title: "What support can schools expect?",
+      title: "What kind of support is included?",
       answer:
-        "We offer round-the-clock support via chat, email, or phone. Our support team understands education and technology, so whether it's a quick fix or strategic guidance, we've got your back.",
+        "Both plans include email support and access to our knowledge base. The Standard plan includes priority support, and you can add 24/7 dedicated support through our Priority Support add-on.",
     },
-  ];
-  
+  ]
 
   return (
     <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden">
@@ -50,7 +49,7 @@ export default function FAQSections() {
           </h2>
         </div>
         <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-          Find answers to common questions about our platform and services.
+          Find answers to common questions about our pricing and plans.
         </p>
       </div>
 
@@ -63,18 +62,18 @@ export default function FAQSections() {
         </div>
 
         {/* Contact Support */}
-        {/* <div className="mt-12 text-center">
+        <div className="mt-12 text-center">
           <div className="bg-gradient-to-r from-[#00356B]/5 to-[#A51C30]/5 rounded-xl p-6 border border-gray-200 dark:border-gray-700">
             <MessageCircle className="w-12 h-12 text-[#A51C30] dark:text-[#00356B] mx-auto mb-4" />
             <h3 className="text-xl font-semibold text-[#00356B] dark:text-[#A51C30] mb-2">Still have questions?</h3>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              Our support team is here to help you with any questions or concerns.
+              Our team is here to help you choose the right plan for your school.
             </p>
             <button className="bg-gradient-to-r from-[#A51C30] to-[#00356B] hover:from-[#00356B] hover:to-[#A51C30] text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
               Contact Support
             </button>
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   )

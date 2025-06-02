@@ -6,6 +6,7 @@ import Layout from "../components/layout/Layout"
 import Features from "../pages/Features"
 import About2 from "../pages/About2"
 import Pricing from '../pages/Pricing'
+import Getintouch from "../pages/Getintouch"
 
 const router = createBrowserRouter([
   {
@@ -29,10 +30,10 @@ const router = createBrowserRouter([
         path: "/pricing",
         element: <Pricing />,
       },
-      
-    
-      
-      // Add more routes here
+      {
+        path: "/getintouch",
+        element: <Getintouch />,
+      }
     ],
   },
 ])
